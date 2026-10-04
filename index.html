@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Grammar Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Basic Grammar Checker</h1>
+    <p class="subtitle">Find simple grammar and writing mistakes</p>
+
+    <textarea id="textInput"
+        placeholder="Enter your sentence here..."></textarea>
+
+    <button onclick="checkGrammar()">Check Grammar</button>
+
+    <div class="score">
+        <h2 id="issueCount">0</h2>
+        <p>Issues Found</p>
+    </div>
+
+    <div class="result">
+        <h2>Suggestions</h2>
+        <ul id="suggestions">
+            <li>Your grammar suggestions will appear here.</li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
